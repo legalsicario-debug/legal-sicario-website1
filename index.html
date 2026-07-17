@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saam Zangeneh, P.A. | Federal & State Criminal Defense Attorney | Miami & San Juan</title>
+    <meta name="description" content="Ex-prosecutor criminal defense attorney in Miami and San Juan. Federal crimes, drug defense, white collar. 24+ years experience.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --preto-profundo: #0A0A0A;
+            --preto-secundario: #141414;
+            --verde-rolex: #006039;
+            --verde-rolex-claro: #1C5E3C;
+            --dourado: #A37E2C;
+            --dourado-claro: #C9A227;
+            --branco: #F5F5F0;
+            --cinza-texto: #B8B8B0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--branco);
+            background: var(--preto-profundo);
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--preto-profundo);
+            color: var(--branco);
+            padding: 1.2rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.8);
+            border-bottom: 1px solid var(--verde-rolex);
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 0.15em;
+        }
+
+        .logo-main {
+            display: block;
+            font-size: 0.95rem;
+            color: var(--dourado);
+            letter-spacing: 0.15em;
+        }
+
+        .logo-sub {
+            display: block;
+            font-size: 0.65rem;
+            color: var(--cinza-texto);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .cta-call-header {
+            background: var(--dourado);
+            color: var(--preto-profundo);
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            transition: all 0.3s ease;
+            display: inline-block;
+            letter-spacing: 0.05em;
+        }
+
+        .cta-call-header:hover {
+            background: var(--dourado-claro);
+            transform: none;
+            box-shadow: 0 4px 16px rgba(163, 126, 44, 0.6);
+        }
+
+        /* Hamburger menu para mobile */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--bg-white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .cta-call-header {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* MAIN CONTENT */
+        main {
+            margin-top: 80px;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            color: var(--branco);
+            letter-spacing: -0.02em;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: var(--dourado);
+            letter-spacing: -0.015em;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: var(--branco);
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--cinza-texto);
+            line-height: 1.8;
+        }
+
+        a {
+            color: var(--dourado);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--dourado-claro);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: var(--preto-profundo);
+            color: var(--branco);
+            padding: 6rem 1rem 4rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            min-height: 70vh;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 2rem;
+        }
+
+        .hero h1 {
+            color: var(--branco);
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .subtitle {
+            font-size: 1.1rem;
+            color: var(--dourado);
+            margin-bottom: 2.5rem;
+            font-style: normal;
+            font-family: 'Georgia', serif;
+            font-weight: normal;
+        }
+
+        .hero-image-container {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 0;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 0;
+            font-size: 0.95rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .btn-primary {
+            background: var(--dourado);
+            color: var(--preto-profundo);
+        }
+
+        .btn-primary:hover {
+            background: var(--dourado-claro);
+            transform: none;
+            box-shadow: 0 8px 24px rgba(163, 126, 44, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--branco);
+            border: 2px solid var(--verde-rolex);
+        }
+
+        .btn-secondary:hover {
+            background: var(--verde-rolex);
+            color: var(--branco);
+        }
+
+        /* CREDIBILITY BAR */
+        .credibility {
+            background: var(--preto-secundario);
+            padding: 3rem 1rem;
+            border-top: 1px solid var(--verde-rolex);
+            border-bottom: 1px solid var(--verde-rolex);
+        }
+
+        .credibility-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .credibility-item {
+            padding: 1rem;
+        }
+
+        .credibility-number {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.8rem;
+            display: block;
+            line-height: 1;
+        }
+
+        .credibility-label {
+            font-weight: normal;
+            color: var(--verde-rolex);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .credibility-value {
+            font-size: 1.1rem;
+            color: var(--branco);
+            font-weight: 600;
+        }
+
+        /* WHY ME SECTION */
+        .why-me {
+            background: var(--preto-profundo);
+            padding: 5rem 1rem;
+        }
+
+        .why-me h2 {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .unique-value-props {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .value-prop {
+            background: var(--preto-secundario);
+            padding: 2rem;
+            border-left: 3px solid var(--dourado);
+            border-radius: 0;
+        }
+
+        .value-prop h3 {
+            color: var(--branco);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .value-prop p {
+            color: var(--cinza-texto);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* PRACTICE AREAS */
+        .practice-areas {
+            background: var(--preto-profundo);
+            padding: 5rem 1rem;
+        }
+
+        .practice-areas h2 {
+            text-align: left;
+            margin-bottom: 4rem;
+        }
+
+        .category {
+            margin-bottom: 4rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .category-title {
+            font-size: 1.2rem;
+            color: var(--dourado);
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-bottom: 1px solid var(--verde-rolex);
+            padding-bottom: 1.5rem;
+            font-weight: normal;
+        }
+
+        .practice-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .practice-card {
+            background: transparent;
+            padding: 1.5rem 0;
+            border-radius: 0;
+            border: none;
+            border-bottom: 1px solid #222;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .practice-card:last-child {
+            border-bottom: none;
+        }
+
+        .practice-card:hover h3 {
+            color: var(--dourado);
+        }
+
+        .practice-card h3 {
+            color: var(--branco);
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+            font-weight: normal;
+            transition: color 0.3s ease;
+        }
+
+        .practice-card p {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--cinza-texto);
+        }
+
+        /* SOCIAL PROOF */
+        .testimonials {
+            background: var(--preto-secundario);
+            padding: 5rem 1rem;
+        }
+
+        .testimonials h2 {
+            text-align: left;
+            margin-bottom: 4rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial {
+            background: transparent;
+            padding: 2rem;
+            border-radius: 0;
+            border-left: 2px solid var(--verde-rolex);
+            box-shadow: none;
+        }
+
+        .testimonial-quote {
+            font-style: italic;
+            color: var(--branco);
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .testimonial-quote::before {
+            content: '"';
+            font-size: 2.5rem;
+            color: var(--dourado);
+            display: block;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--dourado);
+            font-size: 0.95rem;
+        }
+
+        .testimonial-source {
+            font-size: 0.8rem;
+            color: var(--cinza-texto);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* FEATURED CASE */
+        .featured-case {
+            background: var(--preto-profundo);
+            padding: 5rem 1rem;
+        }
+
+        .featured-case h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .case-content {
+            background: var(--preto-secundario);
+            padding: 3rem;
+            border-radius: 0;
+            border: 1px solid var(--verde-rolex);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .case-title {
+            color: var(--dourado);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .case-description {
+            color: var(--cinza-texto);
+            line-height: 1.8;
+        }
+
+        .case-note {
+            background: transparent;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-left: 2px solid var(--verde-rolex);
+            font-size: 0.9rem;
+            color: var(--cinza-texto);
+        }
+
+        .case-note strong {
+            color: var(--branco);
+        }
+
+        /* OFFICES & TRUST */
+        .offices {
+            background: var(--preto-profundo);
+            padding: 5rem 1rem;
+        }
+
+        .offices h2 {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .offices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 4rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .office-card {
+            background: transparent;
+            padding: 2rem;
+            border-radius: 0;
+            text-align: center;
+            border: 1px solid var(--verde-rolex);
+            padding: 3rem;
+        }
+
+        .office-name {
+            color: var(--dourado);
+            font-weight: 600;
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .office-details {
+            color: var(--cinza-texto);
+            line-height: 2;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .office-phone {
+            color: var(--branco);
+            font-weight: normal;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .office-phone a {
+            color: var(--dourado);
+        }
+
+        /* FINAL CTA */
+        .final-cta {
+            background: var(--preto-profundo);
+            color: var(--branco);
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        .final-cta h2 {
+            color: var(--dourado);
+            margin-bottom: 1.5rem;
+        }
+
+        .final-cta p {
+            color: var(--cinza-texto);
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+
+        .risk-reversal {
+            background: var(--preto-secundario);
+            padding: 2.5rem;
+            border-radius: 0;
+            margin: 3rem auto;
+            max-width: 700px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            border: 1px solid var(--verde-rolex);
+            color: var(--branco);
+        }
+
+        .risk-reversal strong {
+            color: var(--dourado);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #000000;
+            color: var(--branco);
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer h3 {
+            color: var(--dourado);
+            margin-bottom: 0.5rem;
+        }
+
+        footer > .footer-content > p {
+            color: var(--cinza-texto);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--dourado);
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--dourado-claro);
+        }
+
+        .social-links {
+            margin: 2rem 0;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 1rem;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            border-radius: 0;
+            background: var(--verde-rolex);
+            color: var(--branco);
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--dourado);
+            color: var(--preto-profundo);
+            transform: scale(1.1);
+        }
+
+        .legal-disclaimer {
+            font-size: 0.75rem;
+            color: #666;
+            margin-top: 3rem;
+            line-height: 1.7;
+            border-top: 1px solid #222;
+            padding-top: 2rem;
+        }
+
+        .legal-disclaimer p {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem 1rem;
+                min-height: auto;
+            }
+
+            .hero-content {
+                order: 2;
+                padding-right: 0;
+            }
+
+            .hero-image-container {
+                order: 1;
+                max-width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+                line-height: 1.2;
+            }
+
+            .hero .subtitle {
+                font-size: 0.9rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 2.5rem 1rem;
+            }
+
+            .unique-value-props,
+            .testimonials-grid,
+            .offices-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 1rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .footer-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .credibility-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .practice-cards {
+                gap: 1.5rem;
+            }
+
+            .value-prop {
+                padding: 1.5rem;
+            }
+
+            .credibility-number {
+                font-size: 1.8rem;
+            }
+
+            main {
+                margin-top: 70px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            section {
+                padding: 2rem 1rem;
+            }
+
+            .credibility-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .risk-reversal {
+                padding: 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* PLACEHOLDER STYLING */
+        .placeholder {
+            background: #fff3cd;
+            color: #856404;
+            padding: 0.5rem;
+            border-radius: 2px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <span class="logo-main">LEGAL SICARIO</span>
+            <span class="logo-sub">Saam Zangeneh, P.A.</span>
+        </div>
+        <a href="tel:+13054412333" class="cta-call-header">☎ Call Now</a>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>I've been on the other side of the table. I know how the government builds the case against you. Now, I dismantle it.</h1>
+                <p class="subtitle">Federal & State Criminal Defense with the precision of a former prosecutor and the technical authority of a Toxicology and Pharmacology specialist. We protect your freedom in all 50 U.S. States.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">SCHEDULE FREE CONFIDENTIAL CONSULTATION</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="saam-zangeneh-hero.jpg" alt="Saam Zangeneh, Federal & State Criminal Defense Attorney"
+                     class="hero-image" loading="lazy">
+            </div>
+        </section>
+
+        <!-- CREDIBILITY BAR -->
+        <section class="credibility">
+            <div class="container">
+                <div class="credibility-grid">
+                    <div class="credibility-item">
+                        <div class="credibility-number" style="color: var(--dourado);">24</div>
+                        <div class="credibility-label">EXPERIENCE</div>
+                        <div class="credibility-value">Years Licensed</div>
+                        <div class="credibility-value" style="font-size: 0.9rem; color: var(--cinza-texto);">Since 2001</div>
+                    </div>
+                    <div class="credibility-item">
+                        <div class="credibility-number" style="color: var(--verde-rolex);">FL</div>
+                        <div class="credibility-label">STATUS</div>
+                        <div class="credibility-value">Member in Good Standing</div>
+                        <div class="credibility-value" style="font-size: 0.9rem; color: var(--cinza-texto);">Florida Bar</div>
+                    </div>
+                    <div class="credibility-item">
+                        <div class="credibility-number" style="color: var(--dourado);">3</div>
+                        <div class="credibility-label">BACKGROUND</div>
+                        <div class="credibility-value">Miami-Dade State Attorney</div>
+                        <div class="credibility-value" style="font-size: 0.9rem; color: var(--cinza-texto);">(3 years)</div>
+                    </div>
+                    <div class="credibility-item">
+                        <div class="credibility-number" style="color: var(--verde-rolex);">50</div>
+                        <div class="credibility-label">JURISDICTION</div>
+                        <div class="credibility-value">All 50 States, PR, USVI</div>
+                        <div class="credibility-value" style="font-size: 0.9rem; color: var(--cinza-texto);">Federal Courts</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STRATEGIC ADVANTAGE -->
+        <section class="why-me">
+            <div class="container">
+                <h2>The Strategic Advantage of a Criminal Science Specialist</h2>
+                <p style="font-size: 1rem; color: var(--cinza-texto); max-width: 800px; margin: 0 auto 3rem;">Saam Zangeneh, P.A. delivers aggressive, technically superior defense. While most attorneys accept government evidence at face value, we leverage rare scientific training to challenge the validity of lab reports and deconstruct the prosecution's strategy from within.</p>
+                <div class="unique-value-props">
+                    <div class="value-prop">
+                        <h3>Former Prosecutor's Vision</h3>
+                        <p>Complete anticipation of government moves, identifying weaknesses in case construction before trial.</p>
+                    </div>
+                    <div class="value-prop">
+                        <h3>Unique Scientific Expertise</h3>
+                        <p>Background in Biology, Pharmacology, and Toxicology to dismantle evidence in drug cases, DUI, and healthcare fraud.</p>
+                    </div>
+                    <div class="value-prop">
+                        <h3>Full Federal Reach</h3>
+                        <p>Licensed representation in federal courts across all 50 States, Puerto Rico, and U.S. Virgin Islands.</p>
+                    </div>
+                    <div class="value-prop">
+                        <h3>Legal Aggression</h3>
+                        <p>Absolute focus on "Not Guilty" verdicts, prioritizing acquittal over unfavorable plea agreements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRACTICE AREAS -->
+        <section class="practice-areas">
+            <div class="container">
+                <h2>Areas of Practice</h2>
+
+                <div class="category">
+                    <div class="category-title">Federal & White Collar Crimes</div>
+                    <div class="practice-cards">
+                        <div class="practice-card">
+                            <h3>Bank Fraud</h3>
+                            <p>Federal fraud prosecution and defense</p>
+                        </div>
+                        <div class="practice-card">
+                            <h3>Health Care Fraud</h3>
+                            <p>Complex medical and billing investigations</p>
+                        </div>
+                        <div class="practice-card">
+                            <h3>Tax Fraud</h3>
+                            <p>Federal tax crime representation</p>
+                        </div>
+                        <div class="practice-card">
+                            <h3>Mail & Wire Fraud</h3>
+                            <p>Federal communication crimes</p>
+                        </div>
+                        <div class="practice-card">
+                            <h3>Insider Trading</h3>
+                            <p>Securities and market manipulation</p>
+                        </div>
+                        <div class="practice-card">
+                            <h3>Embezzlement</h3>
+                            <p>Misappropriation and theft of funds</p>
+                        </div>
+                        <div class="practice-card">
+                            <h3>Forgery & Falsification</h3>
+                            <p>Document and fraud crimes</p>
+                        </div>
+                        <div class="practice-card">
+                            <h3>Identity Theft</h3>
+                            <p>Federal identity crime defense</p>
+                        </div>
+                        <div class="practice-card">
+                            <h3>Extradition</h3>
+                            <p>International criminal matters</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="category-title">Drug Crimes</div>
+                    <div class="practice-cards">
+                        <div class="practice-card">
+                            <h3>Drug Trafficking</h3>
+                            <p>Federal and state trafficking charges</p>
+                        </div>
+                        <div class="practice-card">
+                            <h3>Drug Possession</h3>
+                            <p>Felony and misdemeanor drug charges</p>
+                        </div>
+                        <div class="practice-card">
+                            <h3>Drug Manufacturing</h3>
+                            <p>Cultivation and production crimes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="category-title">Crimes of Violence & Against the Person</div>
+                    <div class="practice-cards">
+                        <div class="practice-card">
+                            <h3>Domestic Violence</h3>
+                            <p>Family violence and restraining orders</p>
+                        </div>
+                        <div class="practice-card">
+                            <h3>Sex Crimes</h3>
+                            <p>Sexual offense defense</p>
+                        </div>
+                        <div class="practice-card">
+                            <h3>Burglary & Theft</h3>
+                            <p>Property crime defense</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="category-title">Digital & Appellate</div>
+                    <div class="practice-cards">
+                        <div class="practice-card">
+                            <h3>Computer Crimes</h3>
+                            <p>Cybercrime and digital offense defense</p>
+                        </div>
+                        <div class="practice-card">
+                            <h3>Criminal Appeals</h3>
+                            <p>Appellate representation and post-conviction relief</p>
+                        </div>
+                        <div class="practice-card">
+                            <h3>Criminal Investigation</h3>
+                            <p>Proactive investigation and mitigation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOCIAL PROOF -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Those Who Trusted Us Have to Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <div class="testimonial-quote">
+                            "Dr. Zangeneh's technical analysis of the toxicology report saved me. He caught errors that no other attorney identified. Verdict: Not Guilty."
+                        </div>
+                        <div class="testimonial-author">Roberto S.</div>
+                        <div class="testimonial-source">Federal Trafficking Case</div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-quote">
+                            "Having a former prosecutor at my side gave me peace of mind knowing we were always one step ahead of the prosecution. Impeccable professionalism."
+                        </div>
+                        <div class="testimonial-author">Lucia M.</div>
+                        <div class="testimonial-source">Businesswoman (White Collar Case)</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section style="background: var(--preto-profundo); padding: 5rem 1rem;">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 4rem;">How We Protect Your Freedom</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                    <div style="background: var(--preto-secundario); padding: 2.5rem; border-top: 3px solid var(--dourado);">
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--verde-rolex); margin-bottom: 1rem;">1</div>
+                        <h3 style="color: var(--branco); margin-bottom: 1rem; font-size: 1.1rem;">Prosecution Case Diagnosis</h3>
+                        <p style="color: var(--cinza-texto); font-size: 0.95rem; line-height: 1.6;">We meticulously analyze how the government built its case against you, identifying strategic weaknesses and rights violations.</p>
+                    </div>
+                    <div style="background: var(--preto-secundario); padding: 2.5rem; border-top: 3px solid var(--dourado);">
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--verde-rolex); margin-bottom: 1rem;">2</div>
+                        <h3 style="color: var(--branco); margin-bottom: 1rem; font-size: 1.1rem;">Technical Counter-Audit</h3>
+                        <p style="color: var(--cinza-texto); font-size: 0.95rem; line-height: 1.6;">We leverage our background in pharmacology and toxicology to challenge every scientific and laboratory evidence presented by the prosecution.</p>
+                    </div>
+                    <div style="background: var(--preto-secundario); padding: 2.5rem; border-top: 3px solid var(--dourado);">
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--verde-rolex); margin-bottom: 1rem;">3</div>
+                        <h3 style="color: var(--branco); margin-bottom: 1rem; font-size: 1.1rem;">Vigorous Defense</h3>
+                        <p style="color: var(--cinza-texto); font-size: 0.95rem; line-height: 1.6;">We execute an aggressive courtroom strategy focused on dismantling the government's arguments and protecting your future.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BACK TO TESTIMONIALS / CLIENT OUTCOMES -->
+        <section class="testimonials">
+            <div class="container">
+                <div style="margin-top: 0; padding-top: 0; border-top: none;">
+                    <h3 style="color: var(--dourado); margin-bottom: 3rem; text-align: center;">Real Client Outcomes</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+                        <div style="background: transparent; padding: 2rem; border-radius: 0; border-left: 2px solid var(--verde-rolex);">
+                            <p style="color: var(--branco); font-style: italic; margin-bottom: 1.5rem;">
+                                "My whole case got dismissed. He explained everything and reduced my anxiety through the entire process."
+                            </p>
+                            <div style="color: var(--dourado); font-weight: 600; font-size: 0.9rem;">Client Result</div>
+                            <div style="color: var(--cinza-texto); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;">via Avvo</div>
+                        </div>
+                        <div style="background: transparent; padding: 2rem; border-radius: 0; border-left: 2px solid var(--verde-rolex);">
+                            <p style="color: var(--branco); font-style: italic; margin-bottom: 1.5rem;">
+                                "Grateful for his dedication and the positive outcome he achieved for our family."
+                            </p>
+                            <div style="color: var(--dourado); font-weight: 600; font-size: 0.9rem;">Family Testimonial</div>
+                            <div style="color: var(--cinza-texto); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;">Criminal Case</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECONDARY CTA -->
+        <section style="background: linear-gradient(135deg, var(--preto-profundo) 0%, var(--preto-secundario) 100%); padding: 4rem 1rem; text-align: center;">
+            <div class="container">
+                <h2 style="color: var(--branco); margin-bottom: 1rem;">Your freedom cannot wait for convenience.</h2>
+                <p style="color: var(--cinza-texto); font-size: 1rem; margin-bottom: 2.5rem;">Defense available 24/7 for criminal emergencies.</p>
+                <a href="tel:+13054412333" class="btn btn-secondary" style="border-color: var(--verde-rolex); color: var(--branco); background: var(--verde-rolex);">SPEAK WITH A SPECIALIST NOW</a>
+            </div>
+        </section>
+
+        <!-- FEATURED CASE -->
+        <section class="featured-case">
+            <div class="container">
+                <h2>Federal Case Experience</h2>
+                <div class="case-content">
+                    <div class="case-title">United States of America v. Matthew Taylor Witkowski</div>
+                    <div class="case-description">
+                        A federal criminal matter handled with the seriousness and precision required at the federal court level. This case demonstrates my experience navigating complex federal prosecution.
+                    </div>
+                    <div class="case-note">
+                        <svg width="18" height="18" viewBox="0 0 40 40" fill="none" stroke="var(--verde-rolex)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle;">
+                            <path d="M10 32h20M20 6v20M12 26l-2 6M28 26l2 6M8 20h4M28 20h4M10 16h20v8H10z" stroke-linejoin="miter"/>
+                            <circle cx="15" cy="22" r="2" fill="var(--verde-rolex)"/>
+                            <circle cx="25" cy="22" r="2" fill="var(--verde-rolex)"/>
+                        </svg> <strong>Legal Perspective:</strong> I cannot guarantee specific outcomes for any case, as each matter depends on unique facts, evidence, and law. However, my federal-level experience and prosecution background uniquely position me to defend you aggressively and strategically.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OFFICES & TRUST -->
+        <section class="offices">
+            <div class="container">
+                <h2>Trusted Representation. Physical Presence.</h2>
+                <div class="offices-grid">
+                    <div class="office-card">
+                        <div class="office-name">Miami, Florida</div>
+                        <div class="office-details">
+                            14 NE 1st Avenue, Suite 300<br>
+                            Miami, FL 33132
+                        </div>
+                        <div class="office-phone">
+                            <a href="tel:+13054412333">(305) 441-2333</a>
+                        </div>
+                    </div>
+                    <div class="office-card">
+                        <div class="office-name">San Juan, Puerto Rico</div>
+                        <div class="office-details">
+                            Available for Federal and local PR cases
+                        </div>
+                        <div class="office-phone">
+                            <a href="tel:+13054412333">(305) 441-2333</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--preto-secundario); border-radius: 0; border: 1px solid var(--verde-rolex);">
+                    <p style="color: var(--cinza-texto); margin-bottom: 0;">
+                        Representing clients in Federal and State courts across all 50 U.S. States, Puerto Rico, and the U.S. Virgin Islands.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section style="background: var(--preto-profundo); padding: 5rem 1rem;">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Frequently Asked Questions</h2>
+                <div style="border-bottom: 1px solid var(--verde-rolex); padding-bottom: 2rem; margin-bottom: 2rem;">
+                    <h3 style="color: var(--branco); cursor: pointer; font-size: 1rem; margin-bottom: 1rem; transition: color 0.3s;" onmouseover="this.style.color='var(--dourado)'" onmouseout="this.style.color='var(--branco)'">Why is background in biology and toxicology a differentiator?</h3>
+                    <p style="color: var(--cinza-texto); display: none;" id="faq1" style="display: block; color: var(--cinza-texto); line-height: 1.6;">In drug cases, DUI, and healthcare fraud, government evidence is scientific. Saam has the technical knowledge to identify whether a lab test was mishandled or if the science applied is flawed—something attorneys without this background cannot challenge effectively.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--verde-rolex); padding-bottom: 2rem; margin-bottom: 2rem;">
+                    <h3 style="color: var(--branco); cursor: pointer; font-size: 1rem; margin-bottom: 1rem; transition: color 0.3s;" onmouseover="this.style.color='var(--dourado)'" onmouseout="this.style.color='var(--branco)'">What does it mean to have a former prosecutor on my defense?</h3>
+                    <p style="color: var(--cinza-texto); display: none;" id="faq2" style="display: block; color: var(--cinza-texto); line-height: 1.6;">It means your attorney knows the inner workings of the system. He understands how prosecutors think, how they prioritize cases, and most importantly, where they typically fail in building their evidence.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--verde-rolex); padding-bottom: 2rem; margin-bottom: 2rem;">
+                    <h3 style="color: var(--branco); cursor: pointer; font-size: 1rem; margin-bottom: 1rem; transition: color 0.3s;" onmouseover="this.style.color='var(--dourado)'" onmouseout="this.style.color='var(--branco)'">Does Saam Zangeneh handle cases outside Florida?</h3>
+                    <p style="color: var(--cinza-texto); display: none;" id="faq3" style="display: block; color: var(--cinza-texto); line-height: 1.6;">Yes. At the federal level, he is licensed to represent clients in all 50 U.S. States, as well as Puerto Rico and the U.S. Virgin Islands.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="final-cta" id="contact">
+            <div class="container">
+                <h2>Your Defense Starts Now</h2>
+                <p>Facing charges? Under investigation? Hearing scheduled? Time is critical.</p>
+
+                <div class="risk-reversal">
+                    <strong>Confidential consultation. No obligation. Free initial case evaluation.</strong><br><br>
+                    I take cases seriously because your freedom is not guaranteed. When you call, you'll speak with an attorney with 24+ years of experience who has been on both sides of the courtroom.
+                </div>
+
+                <a href="tel:+13054412333" class="btn btn-primary" style="font-size: 1rem; padding: 1.2rem 2.5rem;">
+                    Call Now: (305) 441-2333
+                </a>
+                <p style="margin-top: 1.5rem; color: var(--cinza-texto); font-size: 0.9rem;">
+                    Available for emergency consultations 24/7
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+                <div>
+                    <h3 style="color: var(--dourado); margin-bottom: 1rem; font-size: 1rem;">SAAM ZANGENEH, P.A.</h3>
+                    <p style="color: var(--branco); margin-bottom: 1.5rem; font-size: 0.9rem;">Federal & State Criminal Defense Attorney</p>
+                    <p style="color: var(--cinza-texto); margin-bottom: 0.5rem; font-size: 0.9rem;">Miami, Florida</p>
+                    <p style="color: var(--cinza-texto); margin-bottom: 0.5rem; font-size: 0.85rem;">14 NE 1st Avenue, Suite 300<br>Miami, FL 33132</p>
+                    <p style="color: var(--dourado); margin-top: 1rem; font-weight: bold;"><a href="tel:+13054412333" style="color: var(--dourado);">(305) 441-2333</a></p>
+                </div>
+                <div>
+                    <h3 style="color: var(--dourado); margin-bottom: 1rem; font-size: 1rem;">Useful Links</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.8rem;"><a href="#" style="color: var(--dourado); font-size: 0.9rem;">Florida Bar Member in Good Standing</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="#" style="color: var(--dourado); font-size: 0.9rem;">Terms of Use</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="#" style="color: var(--dourado); font-size: 0.9rem;">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color: var(--dourado); margin-bottom: 1rem; font-size: 1rem;">Connect</h3>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="https://instagram.com/legalsicario" target="_blank" title="Instagram @legalsicario" style="display: flex; align-items: center; justify-content: center;">
+                            <svg width="20" height="20" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="6" y="6" width="28" height="28" rx="4"/>
+                                <circle cx="20" cy="20" r="8"/>
+                                <circle cx="28" cy="12" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="legal-disclaimer" style="border-top: 1px solid var(--verde-rolex); padding-top: 2rem;">
+                <p><strong>ATTORNEY ADVERTISING DISCLAIMER:</strong> This website is an advertisement. The information presented on this site is not legal advice, and should not be relied upon as such. Sending inquiries to this website does not create an attorney-client relationship. An attorney-client relationship is only formed upon the execution of a formal engagement agreement. The content, information and communications on this website are for general informational purposes only.</p>
+                <p style="margin-top: 1rem;">© 2026 Saam Zangeneh, P.A. | Miami, FL 33132 | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion functionality
+        document.querySelectorAll('.container > div > h3[onmouseover]').forEach(heading => {
+            heading.addEventListener('click', function() {
+                const nextP = this.nextElementSibling;
+                if (nextP && nextP.tagName === 'P') {
+                    const isHidden = nextP.style.display === 'none';
+                    nextP.style.display = isHidden ? 'block' : 'none';
+                    this.style.color = isHidden ? 'var(--dourado)' : 'var(--branco)';
+                }
+            });
+        });
+
+        // Smooth scroll for phone numbers
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Allow default behavior (dial on mobile)
+            });
+        });
+
+        // Analytics placeholder (to be replaced with real tracking)
+        console.log('Legal Sicario website loaded - Redesign with Hormozi Framework');
+    </script>
+
+</body>
+</html>
